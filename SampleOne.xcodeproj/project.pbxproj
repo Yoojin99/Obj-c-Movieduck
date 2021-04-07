@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F17473BA261451C7006526F2 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473B9261451C7006526F2 /* MovieModel.m */; };
+		F17473C026145674006526F2 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473BF26145674006526F2 /* MovieListViewController.m */; };
+		F17473C626145CA1006526F2 /* MovieListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473C526145CA1006526F2 /* MovieListViewCell.m */; };
+		F17473CC2615B63A006526F2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473CB2615B63A006526F2 /* Person.m */; };
+		F17473D22615BA18006526F2 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473D12615BA18006526F2 /* MovieDetailViewController.m */; };
+		F17473D82615C134006526F2 /* MovieDetailPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473D72615C134006526F2 /* MovieDetailPhotoCollectionViewCell.m */; };
+		F1747445261A1290006526F2 /* MovieDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1747444261A1290006526F2 /* MovieDetailModel.m */; };
+		F17474D0261BD50A006526F2 /* MovieDetailContentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */; };
 		F1C111712613008000617655 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111702613008000617655 /* AppDelegate.m */; };
 		F1C111742613008000617655 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111732613008000617655 /* SceneDelegate.m */; };
 		F1C111772613008000617655 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111762613008000617655 /* ViewController.m */; };
@@ -36,6 +44,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F17473B126144C92006526F2 /* SampleOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleOne.entitlements; sourceTree = "<group>"; };
+		F17473B8261451C7006526F2 /* MovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		F17473B9261451C7006526F2 /* MovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		F17473BE26145674006526F2 /* MovieListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		F17473BF26145674006526F2 /* MovieListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		F17473C426145CA1006526F2 /* MovieListViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieListViewCell.h; sourceTree = "<group>"; };
+		F17473C526145CA1006526F2 /* MovieListViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieListViewCell.m; sourceTree = "<group>"; };
+		F17473CA2615B63A006526F2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F17473CB2615B63A006526F2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F17473D02615BA18006526F2 /* MovieDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		F17473D12615BA18006526F2 /* MovieDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		F17473D62615C134006526F2 /* MovieDetailPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		F17473D72615C134006526F2 /* MovieDetailPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		F1747443261A1290006526F2 /* MovieDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailModel.h; sourceTree = "<group>"; };
+		F1747444261A1290006526F2 /* MovieDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailModel.m; sourceTree = "<group>"; };
+		F17474CE261BD50A006526F2 /* MovieDetailContentUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailContentUIView.h; sourceTree = "<group>"; };
+		F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailContentUIView.m; sourceTree = "<group>"; };
 		F1C1116C2613008000617655 /* SampleOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C1116F2613008000617655 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C111702613008000617655 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +106,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1747440261A1238006526F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1C111752613008000617655 /* ViewController.h */,
+				F1C111762613008000617655 /* ViewController.m */,
+				F17473BE26145674006526F2 /* MovieListViewController.h */,
+				F17473BF26145674006526F2 /* MovieListViewController.m */,
+				F17473D02615BA18006526F2 /* MovieDetailViewController.h */,
+				F17473D12615BA18006526F2 /* MovieDetailViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F1747441261A1257006526F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F17473B8261451C7006526F2 /* MovieModel.h */,
+				F17473B9261451C7006526F2 /* MovieModel.m */,
+				F1747443261A1290006526F2 /* MovieDetailModel.h */,
+				F1747444261A1290006526F2 /* MovieDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1747442261A1269006526F2 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F17473C426145CA1006526F2 /* MovieListViewCell.h */,
+				F17473C526145CA1006526F2 /* MovieListViewCell.m */,
+				F17473D62615C134006526F2 /* MovieDetailPhotoCollectionViewCell.h */,
+				F17473D72615C134006526F2 /* MovieDetailPhotoCollectionViewCell.m */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		F17474D4261BD510006526F2 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F17474CE261BD50A006526F2 /* MovieDetailContentUIView.h */,
+				F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		F1C111632613008000617655 = {
 			isa = PBXGroup;
 			children = (
@@ -104,17 +173,22 @@
 		F1C1116E2613008000617655 /* SampleOne */ = {
 			isa = PBXGroup;
 			children = (
+				F17474D4261BD510006526F2 /* UIView */,
+				F1747442261A1269006526F2 /* ViewCell */,
+				F1747441261A1257006526F2 /* Model */,
+				F1747440261A1238006526F2 /* ViewController */,
+				F17473B126144C92006526F2 /* SampleOne.entitlements */,
 				F1C1116F2613008000617655 /* AppDelegate.h */,
 				F1C111702613008000617655 /* AppDelegate.m */,
 				F1C111722613008000617655 /* SceneDelegate.h */,
 				F1C111732613008000617655 /* SceneDelegate.m */,
-				F1C111752613008000617655 /* ViewController.h */,
-				F1C111762613008000617655 /* ViewController.m */,
 				F1C111782613008000617655 /* Main.storyboard */,
 				F1C1117B2613008100617655 /* Assets.xcassets */,
 				F1C1117D2613008100617655 /* LaunchScreen.storyboard */,
 				F1C111802613008100617655 /* Info.plist */,
 				F1C111812613008100617655 /* main.m */,
+				F17473CA2615B63A006526F2 /* Person.h */,
+				F17473CB2615B63A006526F2 /* Person.m */,
 			);
 			path = SampleOne;
 			sourceTree = "<group>";
@@ -267,9 +341,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C111772613008000617655 /* ViewController.m in Sources */,
+				F17473C026145674006526F2 /* MovieListViewController.m in Sources */,
+				F17473CC2615B63A006526F2 /* Person.m in Sources */,
+				F1747445261A1290006526F2 /* MovieDetailModel.m in Sources */,
 				F1C111712613008000617655 /* AppDelegate.m in Sources */,
 				F1C111822613008100617655 /* main.m in Sources */,
+				F17473BA261451C7006526F2 /* MovieModel.m in Sources */,
+				F17473D22615BA18006526F2 /* MovieDetailViewController.m in Sources */,
+				F17474D0261BD50A006526F2 /* MovieDetailContentUIView.m in Sources */,
+				F17473C626145CA1006526F2 /* MovieListViewCell.m in Sources */,
 				F1C111742613008000617655 /* SceneDelegate.m in Sources */,
+				F17473D82615C134006526F2 /* MovieDetailPhotoCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +523,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SampleOne/SampleOne.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SampleOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sample.SampleOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -458,7 +543,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SampleOne/SampleOne.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SampleOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sample.SampleOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
