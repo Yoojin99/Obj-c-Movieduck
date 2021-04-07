@@ -56,13 +56,12 @@
         sLayout.headerReferenceSize         = CGSizeZero;
         sLayout.footerReferenceSize         = CGSizeZero;
     sLayout.itemSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.width); // cell 하나의 크기
-    
     photoList = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:sLayout];
     mSummary = [[UILabel alloc] initWithFrame: CGRectZero];
     mSummary.numberOfLines = 0;
     mSummary.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
     mSummary.textColor = UIColor.grayColor;
-    CGRect cgRect = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    //CGRect cgRect = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     //mMovieDetailContentView = [[MovieDetailContentUIView alloc] initWithFrame:cgRect andMovieDetail:movieDetail];
     //mMovieDetailContentView.backgroundColor = UIColor.blueColor;
     
@@ -72,7 +71,7 @@
     
     photoList.translatesAutoresizingMaskIntoConstraints = NO;
     mSummary.translatesAutoresizingMaskIntoConstraints = NO;
-    mMovieDetailContentView.translatesAutoresizingMaskIntoConstraints = NO;
+    //mMovieDetailContentView.translatesAutoresizingMaskIntoConstraints = NO;
     
     
     photoList.backgroundColor = UIColor.whiteColor;
@@ -95,8 +94,8 @@
                                                [photoList.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
 
                                                [mSummary.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20],
-                                               [mSummary.topAnchor constraintEqualToAnchor:photoList.bottomAnchor constant:30],
                                                [mSummary.trailingAnchor constraintLessThanOrEqualToAnchor:self.view.trailingAnchor constant:-20],
+                                               [mSummary.topAnchor constraintEqualToAnchor: self.photoList.bottomAnchor constant:30],
 
    ]];
     
