@@ -16,6 +16,7 @@
 		F1747445261A1290006526F2 /* MovieDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1747444261A1290006526F2 /* MovieDetailModel.m */; };
 		F17474D0261BD50A006526F2 /* MovieDetailContentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */; };
 		F1A99609264386E100D1ABAE /* MovieDetailJson.json in Resources */ = {isa = PBXBuildFile; fileRef = F1A99608264386E100D1ABAE /* MovieDetailJson.json */; };
+		F1A9960E26438D5900D1ABAE /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = F1A9960D26438D5900D1ABAE /* Movie.json */; };
 		F1C111712613008000617655 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111702613008000617655 /* AppDelegate.m */; };
 		F1C111742613008000617655 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111732613008000617655 /* SceneDelegate.m */; };
 		F1C111772613008000617655 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111762613008000617655 /* ViewController.m */; };
@@ -63,6 +64,7 @@
 		F17474CE261BD50A006526F2 /* MovieDetailContentUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailContentUIView.h; sourceTree = "<group>"; };
 		F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailContentUIView.m; sourceTree = "<group>"; };
 		F1A99608264386E100D1ABAE /* MovieDetailJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MovieDetailJson.json; path = ../../../MovieDetailJson.json; sourceTree = "<group>"; };
+		F1A9960D26438D5900D1ABAE /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Movie.json; path = ../../../Movie.json; sourceTree = "<group>"; };
 		F1C1116C2613008000617655 /* SampleOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C1116F2613008000617655 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C111702613008000617655 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		F1A99607264386C500D1ABAE /* json */ = {
 			isa = PBXGroup;
 			children = (
+				F1A9960D26438D5900D1ABAE /* Movie.json */,
 				F1A99608264386E100D1ABAE /* MovieDetailJson.json */,
 			);
 			path = json;
@@ -324,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A9960E26438D5900D1ABAE /* Movie.json in Resources */,
 				F1C1117F2613008100617655 /* LaunchScreen.storyboard in Resources */,
 				F1C1117C2613008100617655 /* Assets.xcassets in Resources */,
 				F1A99609264386E100D1ABAE /* MovieDetailJson.json in Resources */,
