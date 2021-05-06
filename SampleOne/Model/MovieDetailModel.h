@@ -13,8 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic) NSArray<NSURL*>* mPhotos;
 @property(nonatomic) NSString* mSummary;
+@property(nonatomic) NSIndexPath* mMovieIndexPath;
+@property(nonatomic) int mMovieId;
 
-- (instancetype) initWith: (NSArray<NSURL*>*) aPhotos andSummary: (NSString*) aSummary NS_DESIGNATED_INITIALIZER; //지정 초기화 메서드
+- (instancetype) initWith: (NSArray<NSURL*>*) aPhotos andSummary: (NSString*) aSummary andMovieIndexPath: (NSIndexPath*) mMovieIndexPath andMovieId: (int) aMovieId NS_DESIGNATED_INITIALIZER; //지정 초기화 메서드
 
 @end
 

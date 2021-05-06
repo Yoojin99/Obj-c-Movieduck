@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property UILabel* mActor;
 @property UILabel* mReleaseDate;
 @property UILabel* mTag;
+@property UILabel* mLikes;
 
 - (void) updateView : (MovieModel*) aMovieModel;
 

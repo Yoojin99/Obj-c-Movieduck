@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol LoadData <NSObject>
 
 +(NSDictionary *) loadData: (NSString*) aFileName;
+//fetchData - path
 
 @end
 

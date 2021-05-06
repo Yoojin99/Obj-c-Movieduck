@@ -72,6 +72,7 @@
 		F1A9963426438F7800D1ABAE /* LocalDataLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataLoader.m; sourceTree = "<group>"; };
 		F1A9963926438F8400D1ABAE /* RemoteDataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteDataLoader.h; sourceTree = "<group>"; };
 		F1A9963A26438F8400D1ABAE /* RemoteDataLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteDataLoader.m; sourceTree = "<group>"; };
+		F1A996402643B06E00D1ABAE /* ThumbUpDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbUpDelegate.h; sourceTree = "<group>"; };
 		F1C1116C2613008000617655 /* SampleOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C1116F2613008000617655 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C111702613008000617655 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,8 +147,8 @@
 			children = (
 				F17473C426145CA1006526F2 /* MovieListViewCell.h */,
 				F17473C526145CA1006526F2 /* MovieListViewCell.m */,
-				F17473D62615C134006526F2 /* MovieDetailPhotoCollectionViewCell.h */,
 				F17473D72615C134006526F2 /* MovieDetailPhotoCollectionViewCell.m */,
+				F17473D62615C134006526F2 /* MovieDetailPhotoCollectionViewCell.h */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -182,6 +183,14 @@
 			path = DataLoader;
 			sourceTree = "<group>";
 		};
+		F1A9963F2643AFB300D1ABAE /* ThumbUp */ = {
+			isa = PBXGroup;
+			children = (
+				F1A996402643B06E00D1ABAE /* ThumbUpDelegate.h */,
+			);
+			path = ThumbUp;
+			sourceTree = "<group>";
+		};
 		F1C111632613008000617655 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +214,7 @@
 		F1C1116E2613008000617655 /* SampleOne */ = {
 			isa = PBXGroup;
 			children = (
+				F1A9963F2643AFB300D1ABAE /* ThumbUp */,
 				F1A9961226438D7E00D1ABAE /* DataLoader */,
 				F1A99607264386C500D1ABAE /* json */,
 				F17474D4261BD510006526F2 /* UIView */,

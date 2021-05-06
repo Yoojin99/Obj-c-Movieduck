@@ -10,8 +10,9 @@
 #import "Person.h"
 #import "MovieDetailViewController.h"
 #import "LocalDataLoader.h"
+#import "ThumbUpDelegate.h"
 
-@interface MovieListViewController () <UITableViewDataSource, UITableViewDelegate> //
+@interface MovieListViewController () <UITableViewDataSource, UITableViewDelegate, ThumbUpDelegate> //
 
 @end
 
@@ -76,10 +77,18 @@
 //    [sViewController setPhotos: [[self mMovieDetails] objectAtIndex:indexPath.row].mPhotos];
 //    [sViewController setMSummaryString:[[self mMovieDetails] objectAtIndex:indexPath.row].mSummary];
 //
+    [[[self mMovieDetails] objectAtIndex:indexPath.row] setMMovieIndexPath:indexPath];
     MovieDetailViewController* sViewController = [[MovieDetailViewController alloc] initWithMovieDetail: [[self mMovieDetails] objectAtIndex:indexPath.row]];
+    sViewController.delegate = self;
 
     
     [self.navigationController pushViewController:sViewController animated:YES];
     //NSLog(@"%i", indexPath.row);
 }
+-(void) clickedThumbsUpWithIndexPath: (NSIndexPath*) aMovieIndexPath andMovieId: (int) aMovieId {
+    mMovies[aMovieId].likeCount += 1;
+    MovieListViewCell *cell = (MovieListViewCell*) [mMovieList cellForRowAtIndexPath:aMovieIndexPath];
+    [cell updateView:mMovies[aMovieId]];
+}
+
 @end

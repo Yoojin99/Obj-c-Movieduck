@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MovieDetailModel.h"
+#import "ThumbUpDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 // add
 @property(nonatomic) NSString* mSummaryString;
 @property(nonatomic) MovieDetailModel* movieDetail;
+@property (nonatomic, nullable) id <ThumbUpDelegate> delegate;
 
 -(instancetype) initWithMovieDetail: (nullable MovieDetailModel*) aMovieDetail NS_DESIGNATED_INITIALIZER;
 

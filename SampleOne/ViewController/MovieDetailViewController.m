@@ -8,9 +8,10 @@
 #import "MovieDetailViewController.h"
 #import "MovieDetailPhotoCollectionViewCell.h"
 #import "MovieDetailContentUIView.h"
+#import "ThumbUpDelegate.h"
 
 // extension
-@interface MovieDetailViewController () <UICollectionViewDataSource>
+@interface MovieDetailViewController () <UICollectionViewDataSource, ThumbUpDelegate>
 //private
 //@property(nonatomic) UICollectionView *photoList;
 //@property(nonatomic) NSArray<NSURL*>* photos;
@@ -36,6 +37,7 @@
     return [self initWithMovieDetail:nil];
 }
 
+
 -(instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     return [self initWithMovieDetail:nil];
 }
@@ -49,18 +51,22 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     mMovieDetailContentView = [[MovieDetailContentUIView alloc] initWithMovieDetail:movieDetail];
+    mMovieDetailContentView.delegate = self;
     
     [self.view addSubview:mMovieDetailContentView];
     
     mMovieDetailContentView.translatesAutoresizingMaskIntoConstraints = NO;
     
     [NSLayoutConstraint activateConstraints:@[
-                                               
-                                               [mMovieDetailContentView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
-                                               [mMovieDetailContentView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor]
+        
+        [mMovieDetailContentView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
+        [mMovieDetailContentView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor]
+        
+    ]];
+}
 
-   ]];
-    
+- (void)clickedThumbsUp {
+    [self.delegate clickedThumbsUpWithIndexPath:[movieDetail mMovieIndexPath] andMovieId:[movieDetail mMovieId]];
 }
 
 @end

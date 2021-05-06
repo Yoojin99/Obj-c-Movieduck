@@ -9,12 +9,7 @@
 
 @implementation MovieListViewCell
 
-@synthesize mPosterImage;
-@synthesize mName;
-@synthesize mDirector;
-@synthesize mActor;
-@synthesize mReleaseDate;
-@synthesize mTag;
+@synthesize mPosterImage, mName, mDirector, mActor, mReleaseDate, mTag, mLikes;
 
 - (instancetype) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -53,6 +48,11 @@
         mTag.font = [UIFont systemFontOfSize:12 weight:UIFontWeightLight];
         mTag.textColor = UIColor.lightGrayColor;
         [self.contentView addSubview:mTag];
+
+        mLikes = [[UILabel alloc] initWithFrame:CGRectZero];
+        mLikes.font = [UIFont systemFontOfSize:12 weight:UIFontWeightBold];
+        mLikes.textColor = UIColor.blueColor;
+        [self.contentView addSubview:mLikes];
         
         mPosterImage.translatesAutoresizingMaskIntoConstraints = NO;
         mName.translatesAutoresizingMaskIntoConstraints = NO;
@@ -60,7 +60,8 @@
         mActor.translatesAutoresizingMaskIntoConstraints = NO;
         mReleaseDate.translatesAutoresizingMaskIntoConstraints = NO;
         mTag.translatesAutoresizingMaskIntoConstraints = NO;
-        
+        mLikes.translatesAutoresizingMaskIntoConstraints = NO;
+            
         [NSLayoutConstraint activateConstraints: @[
             [mPosterImage.widthAnchor constraintEqualToConstant:80],
             [mPosterImage.heightAnchor constraintEqualToConstant:100],
@@ -86,7 +87,10 @@
             [mTag.leadingAnchor constraintEqualToAnchor:mPosterImage.trailingAnchor constant:20],
             [mTag.topAnchor constraintEqualToAnchor:mReleaseDate.bottomAnchor constant:5],
             [mTag.trailingAnchor constraintLessThanOrEqualToAnchor:self.contentView.trailingAnchor constant:-30],
-            [mTag.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-30]
+            [mTag.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-30],
+            
+            [mLikes.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-30],
+            [mLikes.topAnchor constraintEqualToAnchor:self.contentView.topAnchor constant:30]
         ]];
     }
         
@@ -99,6 +103,7 @@
     mActor.text = [aMovieModel mActor];
     mReleaseDate.text = [aMovieModel mReleaseDate];
     mTag.text = [aMovieModel mTag];
+    mLikes.text = [NSString stringWithFormat:@"%d", [aMovieModel likeCount]];
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul); //비동기로 처리하게 만듦
     dispatch_async(queue, ^{

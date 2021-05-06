@@ -18,6 +18,7 @@
         [self setMActor:aActor];
         [self setMReleaseDate:aReleaseDate];
         [self setMTag:aTag];
+        [self setLikeCount:0];
     }
     return self;
 }

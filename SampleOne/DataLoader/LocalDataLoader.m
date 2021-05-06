@@ -52,8 +52,10 @@
             NSArray *sUrls = @[[[NSURL alloc] initWithString:sUrl1], [[NSURL alloc] initWithString:sUrl2], [[NSURL alloc] initWithString:sUrl3]];
             
             NSString *sSummary = [aObj objectForKey:@"Summary"];
+            NSNumber *sMovieId = [aObj objectForKey:@"id"];
             
-            MovieDetailModel *sMovieDetailModel = [[MovieDetailModel alloc] initWith:sUrls andSummary:sSummary];
+            NSLog(@"%i", [sMovieId intValue]);
+            MovieDetailModel *sMovieDetailModel = [[MovieDetailModel alloc] initWith:sUrls andSummary:sSummary andMovieIndexPath: [NSIndexPath indexPathWithIndex:0] andMovieId:[sMovieId intValue]];
             [movieDetailArray addObject:sMovieDetailModel];
 
         }];

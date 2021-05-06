@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
     @property NSString* mActor;
     @property NSString* mReleaseDate;
     @property NSString* mTag;
+    @property int likeCount;
+
 
 - (instancetype) initWith: (NSURL*) aUrl andName: (NSString*) aName andDirector: (NSString*) aDirector andActor: (NSString*) aActor andReleaseDate: (NSString*) aReleaseDate andTag: (NSString*) aTag NS_DESIGNATED_INITIALIZER; //지정 초기화 메서드
 
