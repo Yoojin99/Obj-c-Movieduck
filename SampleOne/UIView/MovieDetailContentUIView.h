@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) UILabel* summary;
 @property(nonatomic) MovieDetailModel* movieDetail;
 
--(instancetype) initWithFrame:(CGRect)frame andMovieDetail: (nullable MovieDetailModel*) aMovieDetail NS_DESIGNATED_INITIALIZER;
+-(instancetype) initWithMovieDetail: (nullable MovieDetailModel*) aMovieDetail NS_DESIGNATED_INITIALIZER;
 
 @end
 
