@@ -17,6 +17,8 @@
 		F17474D0261BD50A006526F2 /* MovieDetailContentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */; };
 		F1A9961726438E9100D1ABAE /* MovieDetailJson.json in Resources */ = {isa = PBXBuildFile; fileRef = F1A9961526438E9100D1ABAE /* MovieDetailJson.json */; };
 		F1A9961826438E9100D1ABAE /* MovieJson.json in Resources */ = {isa = PBXBuildFile; fileRef = F1A9961626438E9100D1ABAE /* MovieJson.json */; };
+		F1A9963526438F7800D1ABAE /* LocalDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A9963426438F7800D1ABAE /* LocalDataLoader.m */; };
+		F1A9963B26438F8400D1ABAE /* RemoteDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A9963A26438F8400D1ABAE /* RemoteDataLoader.m */; };
 		F1C111712613008000617655 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111702613008000617655 /* AppDelegate.m */; };
 		F1C111742613008000617655 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111732613008000617655 /* SceneDelegate.m */; };
 		F1C111772613008000617655 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C111762613008000617655 /* ViewController.m */; };
@@ -65,6 +67,11 @@
 		F17474CF261BD50A006526F2 /* MovieDetailContentUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailContentUIView.m; sourceTree = "<group>"; };
 		F1A9961526438E9100D1ABAE /* MovieDetailJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MovieDetailJson.json; path = ../../../MovieDetailJson.json; sourceTree = "<group>"; };
 		F1A9961626438E9100D1ABAE /* MovieJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MovieJson.json; path = ../../../MovieJson.json; sourceTree = "<group>"; };
+		F1A9961F26438EE200D1ABAE /* LoadData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadData.h; sourceTree = "<group>"; };
+		F1A9963326438F7800D1ABAE /* LocalDataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataLoader.h; sourceTree = "<group>"; };
+		F1A9963426438F7800D1ABAE /* LocalDataLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataLoader.m; sourceTree = "<group>"; };
+		F1A9963926438F8400D1ABAE /* RemoteDataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteDataLoader.h; sourceTree = "<group>"; };
+		F1A9963A26438F8400D1ABAE /* RemoteDataLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteDataLoader.m; sourceTree = "<group>"; };
 		F1C1116C2613008000617655 /* SampleOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C1116F2613008000617655 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C111702613008000617655 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,6 +173,11 @@
 		F1A9961226438D7E00D1ABAE /* DataLoader */ = {
 			isa = PBXGroup;
 			children = (
+				F1A9961F26438EE200D1ABAE /* LoadData.h */,
+				F1A9963326438F7800D1ABAE /* LocalDataLoader.h */,
+				F1A9963426438F7800D1ABAE /* LocalDataLoader.m */,
+				F1A9963926438F8400D1ABAE /* RemoteDataLoader.h */,
+				F1A9963A26438F8400D1ABAE /* RemoteDataLoader.m */,
 			);
 			path = DataLoader;
 			sourceTree = "<group>";
@@ -364,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A9963B26438F8400D1ABAE /* RemoteDataLoader.m in Sources */,
+				F1A9963526438F7800D1ABAE /* LocalDataLoader.m in Sources */,
 				F1C111772613008000617655 /* ViewController.m in Sources */,
 				F17473C026145674006526F2 /* MovieListViewController.m in Sources */,
 				F17473CC2615B63A006526F2 /* Person.m in Sources */,
